@@ -1,0 +1,42 @@
+env: dev
+
+server:
+  port: 8103
+
+datasource:
+  ip: 127.0.0.1
+  port: 3306
+  database: shop
+  username: root
+  password: 635521736
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: Jack
+    password: 635521736
+    # DataSource Config
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${datasource.ip}:${datasource.port}/${datasource.database}?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: ${datasource.username}
+    password: ${datasource.password}
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+      stat-view-servlet: #访问监控网页的登录用户名和密码
+        login-username: druid
+        login-password: druid
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
