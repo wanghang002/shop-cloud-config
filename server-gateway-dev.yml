@@ -16,13 +16,13 @@ zuul:
   sensitive-headers: Cookie,Set-Cookie,Authorization
   routes:
     module-user:
-      path: /shop/cloud/module/user/**
+      path: /user/**
       serviceId: module-user
     module-product:
-      path: /shop/cloud/module/product/**
+      path: /product/**
       serviceId: module-product
     module-common:
-      path: /shop/cloud/module/common/**
+      path: /common/**
       serviceId: module-common
 
 #排除某些路由
