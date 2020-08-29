@@ -25,6 +25,14 @@ zuul:
       path: /common/**
       serviceId: module-common
 
+datasource:
+  ip: 127.0.0.1
+  port: 3306
+  database: shop
+  username: root
+  password: 635521736
+
+
 #排除某些路由
 #  ignored-patterns:
 #    - /shop/cloud/module/user/listForOrder
