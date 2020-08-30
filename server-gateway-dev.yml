@@ -12,6 +12,10 @@ spring:
   application:
     name: SERVER-GATEWAY
 
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+
 zuul:
   routes:
     sercer-oauth:
