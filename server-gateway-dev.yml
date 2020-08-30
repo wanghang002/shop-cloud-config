@@ -23,7 +23,7 @@ zuul:
       serviceId: sercer-oauth
     module-user:
       path: /user/**
-      serviceId: module-user
+      serviceId: MODULE-USER
     module-product:
       path: /product/**
       serviceId: module-product
