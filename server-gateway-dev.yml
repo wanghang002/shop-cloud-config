@@ -34,6 +34,9 @@ spring:
 
 zuul:
   routes:
+    sercer-oauth:
+      path: /oauth/**
+      serviceId: sercer-oauth
     module-user:
       path: /user/**
       serviceId: module-user
