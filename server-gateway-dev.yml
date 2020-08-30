@@ -33,7 +33,6 @@ spring:
         login-password: druid
 
 zuul:
-  sensitive-headers: Cookie,Set-Cookie
   routes:
     module-user:
       path: /user/**
