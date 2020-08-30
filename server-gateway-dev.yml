@@ -46,7 +46,6 @@ zuul:
 
 
 
-
 #排除某些路由
 #  ignored-patterns:
 #    - /shop/cloud/module/user/listForOrder
