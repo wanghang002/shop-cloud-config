@@ -10,4 +10,4 @@ eureka:
 
 spring:
   application:
-    name: SERVER-OAUTH
+    name: SERVER-AUTH
