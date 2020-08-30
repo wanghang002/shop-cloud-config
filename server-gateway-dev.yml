@@ -18,12 +18,12 @@ ribbon:
 
 zuul:
   routes:
-    sercer-oauth:
+    server-auth:
       path: /oauth/**
-      serviceId: sercer-oauth
+      serviceId: server-auth
     module-user:
       path: /user/**
-      serviceId: MODULE-USER
+      serviceId: module-user
     module-product:
       path: /product/**
       serviceId: module-product
