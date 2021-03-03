@@ -18,18 +18,14 @@ ribbon:
 
 zuul:
   routes:
-    server-auth:
-      path: /oauth/**
-      serviceId: server-auth
     module-user:
       path: /user/**
-      serviceId: module-user
+    server-security:
+      path: /security/**
     module-product:
       path: /product/**
-      serviceId: module-product
     module-common:
       path: /common/**
-      serviceId: module-common
 
 
 
